@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Change</title>
+        <style>
+            *{ box-sizing: border-box;}
+            #imgBig{
+            width:100%;
+            height: 60%;
+            position: relative;
+            border-radius: 10px;
+            border: 2px solid gray;
+            }
+            .pog
+            {
+                position: relative;
+                width: 14%;
+                height:160px;
+                border-radius: 10px;
+                border: 2px solid gray;
+            }
+        </style>
+        <script>
+            function changeImag(amt)
+            {
+                var imgBig=document.getElementById("imgBig");
+                imgBig.src=amt.src;
+            }
+        </script>
+    </head>
+    <body>
+        <img src="pogba1.jpg" class="pog"  onmouseover="changeImag(this)">
+        <img src="pogba2.jpg" class="pog"  onmouseover="changeImag(this)">
+        <img src="pogba3.jpg" class="pog"  onmouseover="changeImag(this)">
+        <img src="pogba4.jpg" class="pog"  onmouseover="changeImag(this)">
+        <img src="pogba5.jpg" class="pog"  onmouseover="changeImag(this)">
+        <img src="pogba6.jpg" class="pog"  onmouseover="changeImag(this)">
+        <img src="pogba7.jpg" class="pog"  onmouseover="changeImag(this)">
+        <div>
+            <img id="imgBig">
+        </div>
+    </body>
+</html>
